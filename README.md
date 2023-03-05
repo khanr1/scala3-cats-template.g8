@@ -1,7 +1,7 @@
 # A [Giter8][g8] template for my standards scala projects
 
 ```bash
-sbt new khanr1/my-scala3-templage.g8
+sbt new khanr1/scala3-cats-template.g8
 ```
 
 
