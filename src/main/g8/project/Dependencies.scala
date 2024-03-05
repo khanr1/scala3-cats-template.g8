@@ -4,15 +4,15 @@ object Dependencies {
 
   object Version {
     // common
-    val cats = "2.10.0"
+    val cats = $cats_version$
     val refined = "0.11.1"
-    val catsEffect = "3.5.3"
+    val catsEffect = $catsEffect_version$
     val monocle = "3.2.0"
     val kitten = "3.2.0"
 
     // test
     val scalacheck = "1.17.0"
-    val weaver = "0.8.4"
+    val weaver = $weaver_version$
 
   }
 
