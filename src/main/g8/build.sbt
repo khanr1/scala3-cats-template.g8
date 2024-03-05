@@ -1,7 +1,7 @@
 import Dependencies.*
 
 ThisBuild / version := "0.0.1-SNAPSHOT"
-ThisBuild / scalaVersion := "$scala_version3$"
+ThisBuild / scalaVersion := "`$scala_version$`"
 ThisBuild / organization := "$organization;format="lower,package"$"
 
 lazy val `$name;format="norm"$` =
