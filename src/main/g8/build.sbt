@@ -16,19 +16,16 @@ lazy val `$name;format="norm"$` =
 
 lazy val dependencies = Seq(
   libraryDependencies ++= Seq(
-    Libraries.catsEffect,
-    Libraries.cats,
-    Libraries.monocle,
-    Libraries.refined,
-    Libraries.kitten
-
+    Libraries.catsEffect.value,
+    Libraries.cats.value,
+    Libraries.monocle.value,
+    Libraries.kitten.value
   ),
   testFrameworks+=new TestFramework("weaver.framework.CatsEffect"),
   libraryDependencies ++= Seq(
     Libraries.weaverCats,
     Libraries.weaverDiscipline,
     Libraries.weaverScalaCheck,
-    Libraries.scalacheck
   ).map(_ % Test)
 )
 
