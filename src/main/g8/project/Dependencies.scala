@@ -17,6 +17,7 @@ object Dependencies {
     val http4s = "$http4s_version$"
     val log4cats = "$log4cat_version$"
     val laminar = "$laminar_version$"
+    val chimney = "$chimney_version$"
 
     // test
     val scalacheck = "$scalacheck_version$"
@@ -41,6 +42,8 @@ object Dependencies {
       Def.setting("org.http4s" %%% "http4s-ember-server" % Version.http4s)
     val htt4sEmberClient =
       Def.setting("org.http4s" %% "http4s-ember-client" % Version.http4s)
+
+    val chimney = Def.setting("io.scalaland" %% "chimney" % Version.chimney)
 
     val iron = Def.setting("io.github.iltotore" %%% "iron" % Version.iron)
     val ironCat = Def.setting("io.github.iltotore" %%% "iron-cats" % Version.iron)
